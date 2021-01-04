@@ -1,0 +1,145 @@
+body, html {
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: 'Consolas', Courier, monospace;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: black;
+}
+
+article {
+    /* text-align: center; */
+    text-align: left;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+}
+
+/* a:hover{
+    color: black;
+} */
+
+.button {
+    border-radius: 8px;
+    border: 2px;
+    background-color: #28323b;
+    padding: 20px;
+    margin: 5px
+}
+
+.button:hover, .button.focus {
+    background-color: whitesmoke;
+    color: black;
+}
+
+img {
+    width: 450px;
+    height: 300px;
+    margin: 15px;
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.specialization{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    vertical-align: baseline;
+}
+
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+/* fixed = parallax, scroll = normal */
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('img/bacground1.jpg');
+    min-height:100%;
+}
+
+.pimg2{
+    background-image: url('img/different-agar-plates.jpg');
+    min-height:400px;
+}
+
+.pimg3{
+    background-image: url('img/sampling1.jpg');
+    min-height:400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: rgb(122, 4, 4);
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #111;
+    font-size: 28px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ptext .border{
+    /* background-color: rgba(245, 220, 166, 0.411); */
+    color: #fff;
+    /* padding: 20px; */
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+/* to make it adaptable to mobile devices */
+@media(max-width: 560px){
+.pimg1, .pimg2, .pimg3{ 
+    background-attachment: scroll;
+    }
+}
+
+#footer{
+    text-align: center;
+    font-weight: medium;
+    color: red; 
+}

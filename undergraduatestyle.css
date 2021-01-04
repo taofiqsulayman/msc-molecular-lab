@@ -1,0 +1,30 @@
+body {
+    background-color: darkgray;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: auto;
+    padding: 30px 10px
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: auto;
+    padding: 30px 10px
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.work {
+    border: 0.5px solid green;
+    font-size: 14px;
+    margin: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
